@@ -15,7 +15,8 @@ namespace Program1
     {
         public Form1()
         {
-            InitializeComponent();  
+            InitializeComponent();
+            
         }
 
         private void buttonInput_Click(object sender, EventArgs e)

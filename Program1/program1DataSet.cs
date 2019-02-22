@@ -4,5 +4,8 @@
 
     partial class program1DataSet
     {
+        partial class productDataTable
+        {
+        }
     }
 }

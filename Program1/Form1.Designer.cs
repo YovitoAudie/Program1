@@ -128,8 +128,8 @@
         private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.Button buttonCheckout;
         private System.Windows.Forms.Button buttonEdit;
-        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Button buttonHistory;
+        public System.Windows.Forms.Panel mainPanel;
     }
 }
 

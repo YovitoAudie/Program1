@@ -47,13 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.productTableAdapter = new Program1.program1DataSetTableAdapters.productTableAdapter();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tanggalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaKonsumenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +55,18 @@
             this.kelengkapanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kerusakanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barcodeDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.qrcodeDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.biayaServisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hargaSparepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sparepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.productTableAdapter = new Program1.program1DataSetTableAdapters.productTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.program1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -77,7 +81,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 22);
-            this.textBox1.TabIndex = 30;
+            this.textBox1.TabIndex = 0;
             // 
             // productBindingSource
             // 
@@ -106,7 +110,7 @@
             this.dateTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTime.Name = "dateTime";
             this.dateTime.Size = new System.Drawing.Size(279, 22);
-            this.dateTime.TabIndex = 28;
+            this.dateTime.TabIndex = 1;
             // 
             // buttonAdd
             // 
@@ -119,7 +123,7 @@
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(141, 37);
-            this.buttonAdd.TabIndex = 27;
+            this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -131,13 +135,13 @@
             this.textBoxDamage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDamage.Name = "textBoxDamage";
             this.textBoxDamage.Size = new System.Drawing.Size(279, 22);
-            this.textBoxDamage.TabIndex = 26;
+            this.textBoxDamage.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(4, 211);
+            this.label5.Location = new System.Drawing.Point(4, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 28);
             this.label5.TabIndex = 25;
@@ -150,7 +154,7 @@
             this.textBoxCompleteness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCompleteness.Name = "textBoxCompleteness";
             this.textBoxCompleteness.Size = new System.Drawing.Size(279, 22);
-            this.textBoxCompleteness.TabIndex = 24;
+            this.textBoxCompleteness.TabIndex = 5;
             // 
             // label6
             // 
@@ -169,7 +173,7 @@
             this.textBoxSerialNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSerialNumber.Name = "textBoxSerialNumber";
             this.textBoxSerialNumber.Size = new System.Drawing.Size(280, 22);
-            this.textBoxSerialNumber.TabIndex = 22;
+            this.textBoxSerialNumber.TabIndex = 4;
             // 
             // label3
             // 
@@ -188,7 +192,7 @@
             this.textBoxNameGoods.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNameGoods.Name = "textBoxNameGoods";
             this.textBoxNameGoods.Size = new System.Drawing.Size(279, 22);
-            this.textBoxNameGoods.TabIndex = 20;
+            this.textBoxNameGoods.TabIndex = 3;
             // 
             // label4
             // 
@@ -207,7 +211,7 @@
             this.textBoxNameCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNameCustomer.Name = "textBoxNameCustomer";
             this.textBoxNameCustomer.Size = new System.Drawing.Size(279, 22);
-            this.textBoxNameCustomer.TabIndex = 18;
+            this.textBoxNameCustomer.TabIndex = 2;
             // 
             // label2
             // 
@@ -223,7 +227,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label8.Location = new System.Drawing.Point(4, 40);
+            this.label8.Location = new System.Drawing.Point(4, 39);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 28);
             this.label8.TabIndex = 16;
@@ -242,95 +246,19 @@
             this.kelengkapanDataGridViewTextBoxColumn,
             this.kerusakanDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
-            this.barcodeDataGridViewImageColumn});
+            this.qrcodeDataGridViewImageColumn,
+            this.biayaServisDataGridViewTextBoxColumn,
+            this.hargaSparepartDataGridViewTextBoxColumn,
+            this.sparepartDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(461, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(461, 6);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(504, 462);
             this.dataGridView1.TabIndex = 31;
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(181)))), ((int)(((byte)(0)))));
-            this.buttonEdit.FlatAppearance.BorderSize = 0;
-            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEdit.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.buttonEdit.ForeColor = System.Drawing.Color.White;
-            this.buttonEdit.Location = new System.Drawing.Point(165, 438);
-            this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(141, 37);
-            this.buttonEdit.TabIndex = 32;
-            this.buttonEdit.Text = "Edit";
-            this.buttonEdit.UseVisualStyleBackColor = false;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.buttonDelete.FlatAppearance.BorderSize = 0;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(314, 438);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(141, 37);
-            this.buttonDelete.TabIndex = 33;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(4, 246);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 28);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Status";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "status", true));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "SPARE IN HIS LIFE",
-            "FROM THIS MONSTROSITY",
-            "EASY COME EASY GO",
-            "WILL LET ME LIVE"});
-            this.comboBox1.Location = new System.Drawing.Point(164, 250);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(279, 24);
-            this.comboBox1.TabIndex = 35;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label9.Location = new System.Drawing.Point(4, 321);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 28);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "QR Code";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.productBindingSource, "barcode", true));
-            this.pictureBox1.Location = new System.Drawing.Point(164, 280);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 155);
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
+            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
             // productIdDataGridViewTextBoxColumn
             // 
@@ -380,12 +308,115 @@
             this.statusDataGridViewTextBoxColumn.HeaderText = "status";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
-            // barcodeDataGridViewImageColumn
+            // qrcodeDataGridViewImageColumn
             // 
-            this.barcodeDataGridViewImageColumn.DataPropertyName = "barcode";
-            this.barcodeDataGridViewImageColumn.FillWeight = 200F;
-            this.barcodeDataGridViewImageColumn.HeaderText = "barcode";
-            this.barcodeDataGridViewImageColumn.Name = "barcodeDataGridViewImageColumn";
+            this.qrcodeDataGridViewImageColumn.DataPropertyName = "qrcode";
+            this.qrcodeDataGridViewImageColumn.HeaderText = "qrcode";
+            this.qrcodeDataGridViewImageColumn.Name = "qrcodeDataGridViewImageColumn";
+            // 
+            // biayaServisDataGridViewTextBoxColumn
+            // 
+            this.biayaServisDataGridViewTextBoxColumn.DataPropertyName = "biayaServis";
+            this.biayaServisDataGridViewTextBoxColumn.HeaderText = "biayaServis";
+            this.biayaServisDataGridViewTextBoxColumn.Name = "biayaServisDataGridViewTextBoxColumn";
+            // 
+            // hargaSparepartDataGridViewTextBoxColumn
+            // 
+            this.hargaSparepartDataGridViewTextBoxColumn.DataPropertyName = "hargaSparepart";
+            this.hargaSparepartDataGridViewTextBoxColumn.HeaderText = "hargaSparepart";
+            this.hargaSparepartDataGridViewTextBoxColumn.Name = "hargaSparepartDataGridViewTextBoxColumn";
+            // 
+            // sparepartDataGridViewTextBoxColumn
+            // 
+            this.sparepartDataGridViewTextBoxColumn.DataPropertyName = "sparepart";
+            this.sparepartDataGridViewTextBoxColumn.HeaderText = "sparepart";
+            this.sparepartDataGridViewTextBoxColumn.Name = "sparepartDataGridViewTextBoxColumn";
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(181)))), ((int)(((byte)(0)))));
+            this.buttonEdit.FlatAppearance.BorderSize = 0;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEdit.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.buttonEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonEdit.Location = new System.Drawing.Point(165, 438);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(141, 37);
+            this.buttonEdit.TabIndex = 9;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.buttonDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonDelete.Location = new System.Drawing.Point(315, 438);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(141, 37);
+            this.buttonDelete.TabIndex = 10;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(4, 246);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 28);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Status";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "status", true));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Rusak",
+            "Tidak bisa di servis",
+            "Selesai"});
+            this.comboBox1.Location = new System.Drawing.Point(164, 250);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(279, 24);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label9.Location = new System.Drawing.Point(4, 321);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 28);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "QR Code";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.productBindingSource, "qrcode", true));
+            this.pictureBox1.Location = new System.Drawing.Point(164, 281);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 155);
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // editForm
             // 
@@ -451,11 +482,11 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private program1DataSet program1DataSet;
         private System.Windows.Forms.BindingSource productBindingSource;
         private program1DataSetTableAdapters.productTableAdapter productTableAdapter;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tanggalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namaKonsumenDataGridViewTextBoxColumn;
@@ -464,6 +495,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kelengkapanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kerusakanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn barcodeDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewImageColumn qrcodeDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn biayaServisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hargaSparepartDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sparepartDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
     }
 }
